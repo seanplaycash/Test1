@@ -1,16 +1,13 @@
 import React from 'react';
+import Details from './Details';
+import Test from './Test';
 
 function App() {
-  const [showProject, setShow]=React.useState(true)
   return (
-    <div className="App">
-      {
-        showProject?<h1>Sean's Project</h1>:null 
-      }
-      {/* <button onClick={()=>setShow(true)}>Show</button>
-      <button onClick={()=>setShow(false)}>Hide</button> */}
-      <button onClick={()=>setShow(!showProject)}>Show/Hide</button>
-    </div>
+    <>
+    <Details />
+    <Test />
+    </>
   );
 }
 
