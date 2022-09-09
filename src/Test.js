@@ -13,7 +13,7 @@ export default function Test() {
     let akenoBtn = document.getElementById("akeno")
     // akenoBtn.addEventListener("click", ()=>{React.useState(false)})
     let riasBtn = document.getElementById("rias")
-    let albedoBtn = document.getElementById("akeno")
+    let albedoBtn = document.getElementById("albedo")
     
     function hsRias() {
         setRias(!rias)
@@ -49,7 +49,7 @@ export default function Test() {
     function hsAlbedo() {
         setAlbedo(!albedo)
         if (albedo === true) {
-            akeno = false
+            albedo = false
             albedoBtn.innerText = 'Show'
           } else {
               if (albedo === false) {
@@ -60,6 +60,7 @@ export default function Test() {
               }
           }
     }
+    
   return (
       <div>
       <h1>Images</h1>
