@@ -1,21 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default function Details() {
-    //Use Inlince Function and Logical NOT(!) for toggle state
-    const [show, setShow]=React.useState(true)
+  let [show, setShow]=useState(true)
 
-    let hsBtn = document.getElementById("hs")
+  let hsBtn = document.getElementById("hs")
 
   function change(){
-    setShow(!show)
       if (show === false) {
         hsBtn.innerText = 'Hide'
-      } else {
+    } else {
         hsBtn.innerText = 'Show'
       }
   }
-
-
+ 
   return (
     <div>
       <h1>Sean's Project</h1>
@@ -27,8 +24,7 @@ export default function Details() {
             <li class="list-group-item">Email: sean@playcash.finance</li>
         </ul>
         )}
-      <button id="hs" onClick={change} className="btn btn-primary mb-5">Hide</button>
-      {/* <button onClick={()=>setShow(!show)} className="btn btn-primary mb-5">Show/Hide</button> */}
+      <button id="hs" onClick={() => {setShow(!show); change();}} className="btn btn-primary mb-5">Hide</button>
     </div>
   )
 }
