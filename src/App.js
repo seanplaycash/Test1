@@ -3,10 +3,16 @@ import Details from './Details';
 import Test from './Test';
 
 function App() {
+
+  // let pressBtn = document.getElementById("A")
+  
+
   return (
     <>
+    {/* <div id="A"> */}
     <Details />
     <Test />
+    {/* </div> */}
     </>
   );
 }
