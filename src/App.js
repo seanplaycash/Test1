@@ -4,15 +4,18 @@ import Test from './Test';
 
 function App() {
 
-  // let pressBtn = document.getElementById("A")
-  
+  function pageReset(event) {
+    if (event.key === 'a' || event.key === "A") {
+      window.location.reload();
+    }
+  }
 
   return (
     <>
-    {/* <div id="A"> */}
+    <div onKeyPress={pageReset}>
     <Details />
     <Test />
-    {/* </div> */}
+    </div>
     </>
   );
 }

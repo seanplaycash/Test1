@@ -35,7 +35,7 @@ export default function Test() {
     }
     
   return (
-      <div>
+    <div>
       <h1>Images</h1>
         {showAkeno && (
             <img src={Akeno} height={300} width={300} />
@@ -49,7 +49,6 @@ export default function Test() {
             <img src={Albedo} height={300} width={300} />
         )}
         <button id="albedo" onClick={()=>{setShowAlbedo(!showAlbedo); change("albedo");}}>Hide</button>
-    </div>
-    
+    </div> 
   )
 }
